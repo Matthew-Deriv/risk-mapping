@@ -1,0 +1,37 @@
+# Site settings
+title: Risk Mapping for Deriv Products
+email: your-email@example.com
+description: >-
+  Risk metrics and statistical analyses for Deriv's trading products including Accumulators, Digits, and Touch Bets.
+baseurl: "/risk-mapping" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: matthewchan
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom settings
+header_pages:
+  - index.md
+  - accumulators.md
+  - digits.md
+  - touch-bets.md
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - products.ipynb
+  - products.py
+  - indices.ipynb
+  - indices.md
+
+# Enable MathJax for LaTeX support
+mathjax: true
