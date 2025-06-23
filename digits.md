@@ -19,27 +19,27 @@ Analysis based on 1.4 million trades on Digits between 2025-06-08 18:20:22+00:00
 ## Risk Metrics
 
 ### PnL Distribution
-![Weighted Histogram of Company PnL for Digits Products](/risk-mapping/source/products/digits_pnl_hist.png)
+![Weighted Histogram of Company PnL for Digits Products](/quants-model-validation/source/products/digits_pnl_hist.png)
 
 The histogram above displays the weighted distribution of company PnL for Digits products. While the distribution appears skewed toward negative values, the company actually maintains profitability. This is because we experience a high frequency of small losses (per $1 stake) but consistently win larger amounts on fewer trades, resulting in a positive expected value overall.
 
 ### Maximum Drawdown
 
-![Cumulative PnL and Maximum Drawdown for Digits Products](/risk-mapping/source/products/digits_cum_pnl.png)
+![Cumulative PnL and Maximum Drawdown for Digits Products](/quants-model-validation/source/products/digits_cum_pnl.png)
 
-The maximum drawdown of $15,341.85 occurred during a 2-hour 20-minute period:
-- Peak at 2025-06-10 15:03:33+00:00 with cumulative PnL of $109,818.43
-- Trough at 2025-06-10 17:23:46+00:00 with cumulative PnL of $94,476.58
+The maximum drawdown of \$15,341.85 occurred during a 2-hour 20-minute period:
+- Peak at 2025-06-10 15:03:33+00:00 with cumulative PnL of \$109,818.43
+- Trough at 2025-06-10 17:23:46+00:00 with cumulative PnL of \$94,476.58
 
 ### Statistical Performance Measures
 
 | Metric | Value |
 |--------|-------|
-| Weighted Mean PnL per $1 staked | 0.0178 |
-| Weighted Std Dev of PnL per $1 | 0.6957 |
-| 99% Value at Risk (VaR) per $1 | -1.4272 |
-| 99% Expected Shortfall per $1 | -1.9715 |
-| Maximum Drawdown ($) | 15,341.85 |
+| Weighted Mean PnL per \$1 staked | 0.0178 |
+| Weighted Std Dev of PnL per \$1 | 0.6957 |
+| 99% Value at Risk (VaR) per \$1 | -1.4272 |
+| 99% Expected Shortfall per \$1 | -1.9715 |
+| Maximum Drawdown (\$) | 15,341.85 |
 
 ### Interpretation
 

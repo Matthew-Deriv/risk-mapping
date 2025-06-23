@@ -38,32 +38,32 @@ Each tick of an open accumulator contract can be thought of as a new single tick
 ## Risk Metrics
 
 ### PnL Distribution
-![Weighted Histogram of Company PnL for Accumulator Products](/risk-mapping/source/products/accu_pnl_hist.png)
+![Weighted Histogram of Company PnL for Accumulator Products](/quants-model-validation/source/products/accu_pnl_hist.png)
 
 The histogram above displays the weighted distribution of company PnL for Accumulator products. The distribution shows the risk-reward profile of Accumulators, where the company experiences a specific pattern of gains and losses based on barrier breaches and successful contracts.
 
 ### Maximum Drawdown
-![Cumulative PnL and Maximum Drawdown for Accumulator Products](/risk-mapping/source/products/accu_cum_pnl.png)
+![Cumulative PnL and Maximum Drawdown for Accumulator Products](/quants-model-validation/source/products/accu_cum_pnl.png)
 
-The maximum drawdown of $1,373.68 occurred during a 52-minute period:
-- Peak at 2025-06-15 16:50:30+00:00 with cumulative PnL of $4,205.20
-- Trough at 2025-06-15 17:42:10+00:00 with cumulative PnL of $2,831.52
+The maximum drawdown of \$1,373.68 occurred during a 52-minute period:
+- Peak at 2025-06-15 16:50:30+00:00 with cumulative PnL of \$4,205.20
+- Trough at 2025-06-15 17:42:10+00:00 with cumulative PnL of \$2,831.52
 
 ### Statistical Performance Measures
 
 | Metric | Value |
 |--------|-------|
-| Weighted Mean PnL per $1 staked | 0.0129 |
-| Weighted Std Dev of PnL per $1 | 0.4518 |
-| 99% Value at Risk (VaR) per $1 | -1.1070 |
-| 99% Expected Shortfall per $1 | -1.8617 |
-| Maximum Drawdown ($) | 1,373.68 |
+| Weighted Mean PnL per \$1 staked | 0.0129 |
+| Weighted Std Dev of PnL per \$1 | 0.4518 |
+| 99% Value at Risk (VaR) per \$1 | -1.1070 |
+| 99% Expected Shortfall per \$1 | -1.8617 |
+| Maximum Drawdown (\$) | 1,373.68 |
 
 ### Interpretation
 
 The positive weighted mean PnL of 1.29 cents per dollar staked indicates that Accumulators are profitable for the company on average. The standard deviation (0.4518) is lower than that of Digits products, suggesting somewhat less volatility in returns.
 
-The 99% VaR of -\$1.1070 per dollar staked shows that, with 99% confidence, the maximum loss per dollar will not exceed \$1.1070 in normal market conditions. The Expected Shortfall of -$1.8617 represents the average loss in the worst 1% of scenarios, providing insight into potential extreme losses.
+The 99% VaR of -\$1.1070 per dollar staked shows that, with 99% confidence, the maximum loss per dollar will not exceed \$1.1070 in normal market conditions. The Expected Shortfall of -\$1.8617 represents the average loss in the worst 1% of scenarios, providing insight into potential extreme losses.
 
 ## Max Drawdown (Worse Case)
 Below is an analysis of worse case scenario based on currently BO limits.  
@@ -91,7 +91,7 @@ Below is an analysis of worse case scenario based on currently BO limits.
 **Total Payout for 1 Symbol**: 302,598.05\$  <br>
 **Total Loss for 1 Symbol**: 277,598.05\$ <br>
 **Total Payout for 10 Symbols**: 3,025,980.46\$ <br>
-**Total Loss for 10 Symbols**: 2,7759,80.46\$
+**Total Loss for 10 Symbols**: 2,775,980.46\$
 
 
 ### Probability of above occurence
