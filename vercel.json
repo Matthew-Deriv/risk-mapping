@@ -4,5 +4,10 @@
       "JEKYLL_ENV": "production"
     }
   },
-  "framework": "jekyll"
+  "buildCommand": "bundle install && bundle exec jekyll build",
+  "outputDirectory": "_site",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
 }
