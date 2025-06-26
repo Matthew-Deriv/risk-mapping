@@ -142,4 +142,4 @@ $$
 ##### 4. **Interpretation**
 
 The 99% VaR is **\$0.78** (rounded).
-This means that in 99% of cases, the company's loss will not exceed **\$0.78 per \$1 bet** (under normal approximation).
+This means that in 99% of cases, the company's loss will not exceed \$0.78 **per \$1 bet** (under normal approximation).
