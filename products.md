@@ -33,12 +33,12 @@ Each tick of an open accumulator contract can be thought of as a new single tick
 #### Risk Metrics
 
 ##### PnL Distribution
-![Weighted Histogram of Company PnL for Accumulator Products](/images/accu_pnl_hist.png)
+![Weighted Histogram of Company PnL for Accumulator Products]({{ site.baseurl }}/assets/images/accu_pnl_hist.png)
 
 The histogram above displays the weighted distribution of company PnL for Accumulator products. The distribution shows the risk-reward profile of Accumulators, where the company experiences a specific pattern of gains and losses based on barrier breaches and successful contracts.
 
 ##### Maximum Drawdown
-![Cumulative PnL and Maximum Drawdown for Accumulator Products](/images/accu_cum_pnl.png)
+![Cumulative PnL and Maximum Drawdown for Accumulator Products]({{ site.baseurl }}/assets/images/accu_cum_pnl.png)
 
 The maximum drawdown of $1,373.68 occurred during a 52-minute period:
 - Peak at 2025-06-15 16:50:30+00:00 with cumulative PnL of $4,205.20
@@ -112,12 +112,12 @@ Analysis based on 1.4 million trades on Digits between 2025-06-08 18:20:22+00:00
 #### Risk Metrics
 
 ##### PnL Distribution
-![Weighted Histogram of Company PnL for Digits Products](/images/digits_pnl_hist.png)
+![Weighted Histogram of Company PnL for Digits Products]({{ site.baseurl }}/assets/images/digits_pnl_hist.png)
 
 The histogram above displays the weighted distribution of company PnL for Digits products. While the distribution appears skewed toward negative values, the company actually maintains profitability. This is because we experience a high frequency of small losses (per $1 stake) but consistently win larger amounts on fewer trades, resulting in a positive expected value overall.
 ##### Maximum Drawdown
 
-![Cumulative PnL and Maximum Drawdown for Digits Products](/images/digits_cum_pnl.png)
+![Cumulative PnL and Maximum Drawdown for Digits Products]({{ site.baseurl }}/assets/images/digits_cum_pnl.png)
 The maximum drawdown of $15,341.85 occurred during a 2-hour 20-minute period:
 - Peak at 2025-06-10 15:03:33+00:00 with cumulative PnL of $109,818.43
 - Trough at 2025-06-10 17:23:46+00:00 with cumulative PnL of $94,476.58
@@ -250,13 +250,13 @@ Analysis based on recent trading data for Touch Bets products.
 #### Risk Metrics
 
 ##### PnL Distribution
-![Weighted Histogram of Company PnL for Touch Bets Products](/images/touch_pnl_hist.png)
+![Weighted Histogram of Company PnL for Touch Bets Products]({{ site.baseurl }}/assets/images/touch_pnl_hist.png)
 
 The histogram above displays the weighted distribution of company PnL for Touch Bets products. 
 
 ##### Maximum Drawdown
 
-![Cumulative PnL and Maximum Drawdown for Touch Bets Products](/images/touch_cum_pnl.png)
+![Cumulative PnL and Maximum Drawdown for Touch Bets Products]({{ site.baseurl }}/assets/images/touch_cum_pnl.png)
 
 The maximum drawdown of $1,846.54 occurred during a 5-hour 46-minute period:
 - Peak at 2025-06-10 18:22:55+00:00 with cumulative PnL of $11,735.94
