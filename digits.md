@@ -59,35 +59,34 @@ Given a betting scenario:
 
 Let $X$ be the company's profit per bet:
 
-\[
-X =
-\begin{cases}
+$$
+X = \begin{cases}
 -9 & \text{with probability } 0.1 \\
 1 & \text{with probability } 0.9
 \end{cases}
-\]
+$$
 
 ---
 
 ##### 2. Calculate Mean ($\mu$) and Standard Deviation ($\sigma$):
 
 **Mean:**
-\[
+$$
 \mu = E[X] = 0.1 \times (-9) + 0.9 \times 1 = -0.9 + 0.9 = 0
-\]
+$$
 
 **Second moment:**
-\[
+$$
 E[X^2] = 0.1 \times (-9)^2 + 0.9 \times 1^2 = 0.1 \times 81 + 0.9 \times 1 = 8.1 + 0.9 = 9.0
-\]
+$$
 
 **Variance:**
-\[
+$$
 \sigma^2 = E[X^2] - (E[X])^2 = 9.0 - 0^2 = 9.0
-\]
-\[
+$$
+$$
 \sigma = \sqrt{9.0} = 3.0
-\]
+$$
 
 ---
 
@@ -95,16 +94,16 @@ E[X^2] = 0.1 \times (-9)^2 + 0.9 \times 1^2 = 0.1 \times 81 + 0.9 \times 1 = 8.1
 
 For a 99% VaR (z-score $\approx 2.33$):
 
-\[
+$$
 \text{99\% VaR} = \mu - 2.33 \sigma = 0 - 2.33 \times 3.0 = -6.99
-\]
+$$
 
 ---
 
 ##### 4. **Interpretation**
 
 The 99% VaR is **\$6.99** (rounded to two decimal places).  
-This means that in 99% of cases, the company's loss will not exceed \$6.99 **per $1 bet**, according to the normal approximation.
+This means that in 99% of cases, the company's loss will not exceed \$6.99 **per \$1 bet**, according to the normal approximation.
 
 ### Digits Differ 
 #### 99% Value at Risk (VaR) Calculation for a Single Bet
@@ -118,28 +117,27 @@ Given a betting scenario:
 
 ##### 1. Define Profit/Loss Variable
 
-\[
-X = 
-\begin{cases}
+$$
+X = \begin{cases}
 -0.111\overline{1} & \text{with probability } 0.9 \\
 1 & \text{with probability } 0.1
 \end{cases}
-\]
+$$
 
 ##### 2. Calculate Mean ($\mu$) and Standard Deviation ($\sigma$):
 
-\[
+$$
 \mu = 0
-\]
-\[
+$$
+$$
 \sigma \approx 0.3333
-\]
+$$
 
 ##### 3. 99% VaR (z-score = 2.33):
 
-\[
+$$
 \text{99\% VaR} = 0 - 2.33 \times 0.3333 \approx -0.7767
-\]
+$$
 
 ##### 4. **Interpretation**
 

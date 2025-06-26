@@ -15,7 +15,7 @@ To obtain an expression for barrier size,
 
 $$ P(\text{Loss}) = P\left(\frac{S_t - S_{t-1}}{S_{t-1}} > b\right) + P\left(\frac{S_t - S_{t-1}}{S_{t-1}} < -b\right) $$
 
-where $b = barrrier \space size$ 
+where $b = \text{barrier} \space \text{size}$ 
 
 
 #### Probability of Zero Payoff
@@ -58,7 +58,7 @@ The maximum drawdown of $1,373.68 occurred during a 52-minute period:
 
 The positive weighted mean PnL of 1.29 cents per dollar staked indicates that Accumulators are profitable for the company on average. The standard deviation (0.4518) is lower than that of Digits products, suggesting somewhat less volatility in returns.
 
-The 99% VaR of -\$1.1070 per dollar staked shows that, with 99% confidence, the maximum loss per dollar will not exceed \$1.1070 in normal market conditions. The Expected Shortfall of -$1.8617 represents the average loss in the worst 1% of scenarios, providing insight into potential extreme losses.
+The 99% VaR of -\$1.1070 per dollar staked shows that, with 99% confidence, the maximum loss per dollar will not exceed \$1.1070 in normal market conditions. The Expected Shortfall of -\$1.8617 represents the average loss in the worst 1% of scenarios, providing insight into potential extreme losses.
 
  #### Max Drawdown (Worse Case)
 Below is an analysis of worse case scenario based on currently BO limits.  
@@ -83,10 +83,10 @@ Below is an analysis of worse case scenario based on currently BO limits.
 | 0.04        | 468.79        | 10                  | 312.10    | 63,993.68    |
 | 0.05        | 523.22        | 9                   | 291.02    | 57,337.00    |
 
-**Total Payout for 1 Symbol**: 302,598.05\$  <br>
-**Total Loss for 1 Symbol**: 277,598.05\$ <br>
-**Total Payout for 10 Symbols**: 3,025,980.46\$ <br>
-**Total Loss for 10 Symbols**: 2,7759,80.46\$
+**Total Payout for 1 Symbol**: \$302,598.05  <br>
+**Total Loss for 1 Symbol**: \$277,598.05 <br>
+**Total Payout for 10 Symbols**: \$3,025,980.46 <br>
+**Total Loss for 10 Symbols**: \$2,775,980.46
 
 
 ##### Probability of above occurence
@@ -153,35 +153,34 @@ Given a betting scenario:
 
 Let $X$ be the company's profit per bet:
 
-\[
-X =
-\begin{cases}
+$$
+X = \begin{cases}
 -9 & \text{with probability } 0.1 \\
 1 & \text{with probability } 0.9
 \end{cases}
-\]
+$$
 
 ---
 
 ##### 2. Calculate Mean ($\mu$) and Standard Deviation ($\sigma$):
 
 **Mean:**
-\[
+$$
 \mu = E[X] = 0.1 \times (-9) + 0.9 \times 1 = -0.9 + 0.9 = 0
-\]
+$$
 
 **Second moment:**
-\[
+$$
 E[X^2] = 0.1 \times (-9)^2 + 0.9 \times 1^2 = 0.1 \times 81 + 0.9 \times 1 = 8.1 + 0.9 = 9.0
-\]
+$$
 
 **Variance:**
-\[
+$$
 \sigma^2 = E[X^2] - (E[X])^2 = 9.0 - 0^2 = 9.0
-\]
-\[
+$$
+$$
 \sigma = \sqrt{9.0} = 3.0
-\]
+$$
 
 ---
 
@@ -189,16 +188,16 @@ E[X^2] = 0.1 \times (-9)^2 + 0.9 \times 1^2 = 0.1 \times 81 + 0.9 \times 1 = 8.1
 
 For a 99% VaR (z-score $\approx 2.33$):
 
-\[
+$$
 \text{99\% VaR} = \mu - 2.33 \sigma = 0 - 2.33 \times 3.0 = -6.99
-\]
+$$
 
 ---
 
 ##### 4. **Interpretation**
 
 The 99% VaR is **\$6.99** (rounded to two decimal places).  
-This means that in 99% of cases, the company's loss will not exceed \$6.99 **per $1 bet**, according to the normal approximation.
+This means that in 99% of cases, the company's loss will not exceed \$6.99 **per \$1 bet**, according to the normal approximation.
 
 ### Digits Differ 
 #### 99% Value at Risk (VaR) Calculation for a Single Bet
@@ -212,28 +211,27 @@ Given a betting scenario:
 
 ##### 1. Define Profit/Loss Variable
 
-\[
-X = 
-\begin{cases}
+$$
+X = \begin{cases}
 -0.111\overline{1} & \text{with probability } 0.9 \\
 1 & \text{with probability } 0.1
 \end{cases}
-\]
+$$
 
 ##### 2. Calculate Mean ($\mu$) and Standard Deviation ($\sigma$):
 
-\[
+$$
 \mu = 0
-\]
-\[
+$$
+$$
 \sigma \approx 0.3333
-\]
+$$
 
 ##### 3. 99% VaR (z-score = 2.33):
 
-\[
+$$
 \text{99\% VaR} = 0 - 2.33 \times 0.3333 \approx -0.7767
-\]
+$$
 
 ##### 4. **Interpretation**
 
@@ -276,4 +274,4 @@ The maximum drawdown of $1,846.54 occurred during a 5-hour 46-minute period:
 
 The positive weighted mean PnL of 3.85 cents per dollar staked indicates that Touch Bets are the most profitable product type for the company on average among the analyzed products. However, this comes with significantly higher volatility, as evidenced by the standard deviation of 0.8149, which is higher than both Accumulators and Digits products.
 
-The 99% VaR of -\$2.2315 per dollar staked and Expected Shortfall of -$3.3456 are also notably higher than other products, indicating greater potential for extreme losses. This risk-reward profile is characteristic of Touch options, where the binary nature of outcomes (touch or no-touch) creates more pronounced volatility in returns.
+The 99% VaR of -\$2.2315 per dollar staked and Expected Shortfall of -\$3.3456 are also notably higher than other products, indicating greater potential for extreme losses. This risk-reward profile is characteristic of Touch options, where the binary nature of outcomes (touch or no-touch) creates more pronounced volatility in returns.
